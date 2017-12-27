@@ -15,7 +15,6 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     self.total += (price*quantity)
     @cart.fill(item, @cart.size, quantity)
-
     self.last_trans = price * quantity
   end
 
